@@ -34,7 +34,7 @@ hr {
   margin: auto;
 }
 
-main {
+.wrapper-tech-maps {
   display: flex;
   justify-content: space-around;
   margin-top: 3rem;
@@ -82,6 +82,12 @@ section {
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
+}
+
+.backend-info{
+  margin-top: 3rem;
+  text-align: center;
+  font-size: larger;
 }
 
 /* Mobile Responsive Styles */
@@ -149,3 +155,5 @@ section,
 .maps-nav ul {
   transition: all 0.3s ease-in-out;
 }
+
+
