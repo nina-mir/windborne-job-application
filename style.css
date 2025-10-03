@@ -4,6 +4,10 @@
 }
 
 body {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "new-science", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -25,19 +29,25 @@ body {
   text-align: center;
 }
 
+.why-this-work{
+  margin: 1rem;
+  font-family: "new-science-mono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: rgb(111, 104, 104);
+}
+
 address {
   display: inline-block;
 }
 
-hr {
-  width: 10vw;
-  margin: auto;
-}
-
-.wrapper-tech-maps {
+main {
   display: flex;
-  justify-content: space-around;
-  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 1rem;
+  margin: 0 3rem;
 }
 
 h3 {
@@ -58,12 +68,38 @@ section {
 
 .maps-nav ul li {
   font-size: 1.5rem;
+  /* list-style-position: inside; */
+  list-style: none;
 }
+
+.maps-nav ul li:hover {
+  box-shadow: 12px 12px 2px 1px rgba(189, 106, 23, 0.2);
+}
+
 
 .tech-stack {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.github-logo{
+  width: 1.3rem;
+  /* background-color: red; */
+  border-radius: 50%;
+  /* box-shadow: 1px -1px 5px black; */
+}
+
+.frontend {
+  background-color: red;
+  box-shadow: 1px -1px 5px darkred;
+
+}
+
+.backend{
+  background-color: blue;
+  box-shadow: 1px -1px 5px darkblue;
+
 }
 
 .tech-stack.h3 {
@@ -75,6 +111,8 @@ section {
   margin-inline-start: 1rem;
   font-size: 1.3rem;
   margin-top: 0.5rem;
+  list-style: none;
+
 }
 
 .tech-title {
@@ -84,14 +122,96 @@ section {
   font-size: 1.5rem;
 }
 
-.backend-info{
+.backend-info {
   margin-top: 3rem;
-  text-align: center;
   font-size: larger;
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: 4rem;
+
 }
 
-/* Mobile Responsive Styles */
+strong {
+  font-family: new-science-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+ol li {
+  list-style-position: inside;
+}
+
+ol li::marker {
+  list-style-position: inside;
+  font-family: new-science-mono, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.screen-warning {
+  display: none;
+  background: #ffeb3b;
+  border: 2px solid #ffc107;
+  padding: 1rem;
+  text-align: center;
+  font-family: "new-science", sans-serif;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+footer {
+  margin-top: 3rem;
+  background-color: rgb(168 162 158);
+  height: 6rem;
+}
+
+.footer-wrapper{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
+  .screen-warning {
+    display: block;
+  }
+}
+
+
+/* Mobile Responsive Styles */
+
+/* Large screens */
+@media screen and (min-width: 769px) {
+  .tech-stack,
+  .maps-nav {
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(50% - 1rem);
+  }
+
+  .backend-info {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  .tech-stack,
+  .maps-nav,
+  .backend-info {
+    width: 100%;
+    flex-basis: auto;
+    padding: 0;
+  }
+
   .main-heading {
     width: 90vw;
     margin: 1rem auto;
@@ -103,6 +223,7 @@ section {
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    padding: 0;
   }
 
   section {
@@ -122,6 +243,9 @@ section {
   .tech-stack ul {
     width: 100%;
   }
+
+  footer {
+    margin-top: 3rem;}
 }
 
 /* Extra small mobile devices */
@@ -147,6 +271,10 @@ section {
   .maps-nav ul {
     gap: 0.5rem;
   }
+
+  footer {
+    margin-top: 3rem;}
+
 }
 
 /* Add smooth transitions */
