@@ -168,6 +168,13 @@ footer {
   margin-top: 3rem;
   background-color: rgb(168 162 158);
   height: 6rem;
+  color: white;
+}
+
+.emoji-container{
+  background-color: yellow;
+  border-end-start-radius: 50%;
+  border-end-end-radius: 50%;
 }
 
 .footer-wrapper{
