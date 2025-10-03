@@ -50,8 +50,6 @@ const tooltip = tooltipContainer.append("div")
     .style("border", "1px solid #ccc")
     .style("border-radius", "4px")
     .style("padding", "8px")
-    .style("font-family", "sans-serif")
-    .style("font-size", "12px")
     .style("box-shadow", "0 2px 4px rgba(0,0,0,0.2)");
 
 // Add click event listener to canvas
@@ -398,9 +396,9 @@ function splitAtAntimeridian(data) {
 // ====================color Legend ==================
 const legendContainer = d3.select(".altitude-legend");
 createColorLegendBar(legendContainer.node(), colorScale, {
-    width: 250,
+    width: 300,
     ticks: 6,
-    title: "Balloon Altitude (km or miles!)"
+    title: "Altitude (km or miles!)"
 });
 
 
