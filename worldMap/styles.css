@@ -1,10 +1,23 @@
 body {
   padding: 20px;
-  background-color: #f5f7fa;
+  background-color: #f5f7f9;
   font-family: "new-science-mono", sans-serif, Arial;
   font-weight: 400;
   font-style: normal;
   box-sizing: border-box;
+}
+
+.home-icon {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: rem;
+  height: 2rem;
+  font-size: 2rem;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.' stroke='gray'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* background-size: px 50px; Adjust size as needed */
 }
 
 .container {
@@ -83,7 +96,6 @@ button {
   font-weight: 700;
   font-style: normal;
   box-sizing: border-box;
-
 }
 
 button:hover {
