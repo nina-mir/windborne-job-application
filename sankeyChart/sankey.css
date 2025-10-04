@@ -7,6 +7,19 @@ body {
   color: #333;
 }
 
+
+.home-icon {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: rem;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+.home-icon a{
+  text-decoration: none;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

@@ -20,6 +20,10 @@ body {
   /* background-size: px 50px; Adjust size as needed */
 }
 
+.home-icon a{
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
