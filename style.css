@@ -129,8 +129,21 @@ section {
   font-size: larger;
   margin: 0 auto;
   width: max-content;
-  margin-bottom: 4rem;
+}
 
+.flow-chart{
+  flex-basis: 100vw;
+}
+
+.chart-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flow-chart img{
+  width: 50vw;
+  /* margin: 1rem auto; */
 }
 
 strong {
